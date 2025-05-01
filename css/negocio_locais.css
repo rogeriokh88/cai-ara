@@ -1,0 +1,13 @@
+#lista-empreendor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.filt-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 85%;
+}
