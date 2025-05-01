@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('cadastro.css');
+
+*{
+    font-family: "poppins",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width:100vw;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-nav{
+    margin: 22px;
+    padding: 10px;
+}
+.list-nav a{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.list-nav a:hover{
+    padding: 1.2rem;
+    background: black;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.Home{
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.2);
+}
+.text-logo{
+    height: 100vh;
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    margin-top: 3em;
+}
+p{
+    padding: 1.5em;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify ;
+}
+.btn{
+    margin-top: 3em;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-cadastro{
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+   
+}
+.btn-cadastro a{
+    text-decoration: none;
+    list-style: none;
+    padding: 1.2rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 12px
+}
+.btn-cadastro:hover {
+    background: rgba(0,0,0,0.2);  
+}
