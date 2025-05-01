@@ -49,7 +49,7 @@ ul{
     background: rgba(0, 0, 0, 0.2);
 }
 .text-logo{
-    height: 100vh;
+    min-height: calc(100vh - 100px);
     display: flex;
     justify-content: safe;
     align-items: center;

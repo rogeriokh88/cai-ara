@@ -25,18 +25,22 @@
     <main id="cadastro-coop">
         <div class="logo-cadastro">
             <h1>logo</h1>
-            <img src="imagem/LOGO.png" width="300" height="300" alt="">
+            <img src="imagem/LOGO.png" width="350" height="400" alt="">
         </div>
         <div class="formulario-cadastro">
             <form action="#">
                 <fieldset>
                     <legend>Cadastro do Empreendedores</legend>
-                    <div>
+                    <div class="parte-1">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" class="nome" placeholder="Diogite seu nome..">
-                    <label for="e-mal">Nome</label>
+                    </div>
+                    <div>
+                    <label for="e-mal">E-mail</label>
                     <input type="text" id="e-mal" class="e-mal" placeholder="Diogite seu E-mail..">
-                    <label for="cell">Nome</label>
+                    </div>
+                    <div>
+                    <label for="cell">cell</label>
                     <input type="text" id="nome" class="nome" placeholder="Diogite seu nome..">
                     </div>
                     <div>
@@ -48,12 +52,21 @@
                         </select>
                     </div>
                     <div>
+                        <div>
                         <label for="endereco">Rua</label>
                         <input type="text" id="endereco" placeholder="digite o nome da rua ">
+                        </div>
+                        <div>
                         <label for="numero">Numero</label>
                         <input type="number" id="numero">
+                        </div>
+                        <div>
                         <label for="bairro">Bairro</label>
                         <input type="text" id="bairro">
+                        </div>
+                        <div class="btn-cadastro2">
+                            <button class="btn-enviar2">Enviar</button>
+                        </div>
                     </div>
                 </fieldset>
             </form>
