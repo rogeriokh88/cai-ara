@@ -6,7 +6,7 @@
     <title>Negocio Locais</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="carregaListaCadastros()">
     <header>
         <div class="logo">
             <h1>Caiçara <span>Conecta</span></h1>
@@ -22,12 +22,61 @@
         </nav>
         </header>
         <main id="lista-empreendor">
-            <div class="filt-list">
-                <h2>Lista de Empreendedores</h2>
+            <div id="buscar">
+
+                <div class="dandos-pesquisar">
+                    <form action="#">
+                    <label for="">Banco</label>
+                    <select>
+                        <option selected disabled value="">--Selecione--</option>
+                        <option id="nome" value="">Nome</option>
+                        <option id="e-mal" >E-mail</option>
+                        <option id="cell" >cell</option>
+                        <option id="rua" value="">rua</option>
+                        <option id="numero" >numero</option>
+                        <option id="bairro" value="">bairro</option>
+                    </select>
+                    </form>
+                </div>
+                <div>
+                    <form action="#">
+                    <label for="produto_serviço"> Serviço / produto</label>
+                        <select name="" id="produto_serviço">
+                            <option selected disabled value="">--Selecione--</option>
+                            <option >produto</option>
+                            <option >serviço</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <button onclick="pesquisarCadastro()">pesquisar</button>
+                </div>
+
+            </div>
+            <div class="tabela_de_cadastro">
+                <div class="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="300px">Nome</th>
+                                <th width="300px">E-mail</th>
+                                <th>cell</th>
+                                <th>Produto Serviço</th>
+                                <th>endereco</th>
+                                <th width="150px">Numero</th>
+                                <th>bairro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listCadastro">
+                           
+                        </tbody>
+                    </table>
+                </div>
             </div>
             
 
         </main>
     </header>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>

@@ -31,8 +31,34 @@ class Bd {
     }
     gravar(g){
         let id = this.getProximoId()
-        localStorage.setItem(id,JSON.stringify(g))
+        localStorage.setItem(id, JSON.stringify(g))
         localStorage.setItem("id", id)
+    }
+    carregaListaCadastros(){
+        //array de cadastros
+        let cadastros = Array()
+
+        let id = localStorage.getItem("id")
+        //recuperar todas os cadastros em localStorage
+        for(let i = 1; i <= id; i++){
+            //recuperar cadastro
+            let cadastro = JSON.parse(localStorage.getItem(i))
+            //existe a possibilidade de haver indices que foram pulados/removidos
+            //nesse caso nós vamos pular esses indeces
+            if(cadastro === null){
+                continue
+            }
+            cadastros.push(cadastro)
+        }
+        return cadastros
+    }
+    pesquisar(cadastro){
+        let cadastroFiltradas = Array
+        cadastroFiltradas = this.carregaListaCadastros()
+        console.log(cadastroFiltradas)
+        console.log(cadastro)
+        cadastroFiltradas.filter(c => c.nome == cadastro.nome)
+
     }
 }
 let bd = new Bd()
@@ -64,4 +90,37 @@ function cadastroEmpreendedor(){
     }
    
     
+}
+function carregaListaCadastros(){
+    let cadastros = Array()
+    cadastros = bd.carregaListaCadastros()
+    //selecionando o elemento tbody da tabela
+    let listaCadastros = document.getElementById("listCadastro")
+
+   //pecorrer o array cadastros, listando cada dados de forma dinamica/
+   cadastros.forEach(function(g){
+
+    //criando a linha (tr)
+    let linha = listaCadastros.insertRow()
+    //criar as colunas (td)
+    linha.insertCell(0).innerHTML = g.nome
+    linha.insertCell(1).innerHTML = g.email
+    linha.insertCell(2).innerHTML = g.cell 
+    linha.insertCell(3).innerHTML = g.produto_servico
+    linha.insertCell(4).innerHTML = g.endereco
+    linha.insertCell(5).innerHTML = g.numero
+    linha.insertCell(6).innerHTML = g.bairro
+   })
+}
+function pesquisarCadastro(){
+    let nome = document.getElementById("nome")
+    let email = document.getElementById("e-mal")
+    let cell = document.getElementById("cell")
+    let produtu_servico = document.getElementById("produto_serviço")
+    let endereco = document.getElementById("endereco")
+    let numero = document.getElementById("numero")
+    let bairro = document.getElementById("bairro")
+
+    let cadastro = new Cadastro(nome, email,cell,produtu_servico,endereco,numero,bairro)
+    bd.pesquisar(cadastro)
 }
