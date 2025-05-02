@@ -1,14 +1,14 @@
 #blog_noticias{
     width: 100vw;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 120px);
     display: grid;
-    grid-template-columns: 35% 35% 25%;
+    grid-template-columns: 34% 34% 25%;
     justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
-
 #primario{
-    border: 1px solid red;
+    margin-top: 0;
     background: #fff;
 }
 #primario h2{
@@ -16,8 +16,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #e9e9e9;
+    margin-bottom: 1em;
 }
 #primario h3{
+    margin-top: 1em;
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
     text-transform: uppercase;
@@ -73,3 +75,15 @@
     cursor: pointer;
 }
 
+.roda-pe{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roda-pe h2{
+    width: 100%;
+    background: blue;
+    color: #fff;
+    padding: 10px;
+}
