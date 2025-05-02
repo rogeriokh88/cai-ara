@@ -1,6 +1,7 @@
 #blog_noticias{
     width: 100vw;
     min-height: calc(100vh - 100px);
+    background: #f6f5f3;
     padding: 10px;
     display: grid;
     grid-template-columns: 34% 34% 24%;
@@ -8,9 +9,7 @@
     flex-direction: column;
     gap: 15px;
 }
-#primario{
-    background: #fff;
-}
+
 #primario h2{
     background:blue;
     text-align: center;
