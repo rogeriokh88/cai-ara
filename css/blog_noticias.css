@@ -10,53 +10,29 @@
     gap: 15px;
 }
 
-#primario h2{
-    background:blue;
+#primario h2, #lateral h2, #secudario h2{
+    background:#483D8B;
     text-align: center;
     text-transform: uppercase;
     color: #e9e9e9;
     margin-bottom: 0.5em;
 }
-#primario h3{
-    margin:0.5em 0 0.5em 0;
+
+#lateral{
+    border: 1px solid #483D8B;
+    background: rgba(245,222,179,0.5);
+    display: block;
+    justify-content: center;
+}
+#lateral h3, #secudario h3, #primario h3{
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
     text-transform: uppercase;
     color: #e9e9e9;
 }
 
-#secudario h2{
-    background:blue ;
-    text-align: center;
-    text-transform: uppercase;
-    color: #e9e9e9;
-}
-#secudario h3{
-    margin:0.5em 0 0.5em 0;
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    text-transform: uppercase;
-    color: #e9e9e9;
-}
-#lateral{
-    border-radius: 10px;
-    display: block;
-    justify-content: center;
-}
-#lateral h3{
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    text-transform: uppercase;
-    color: #e9e9e9;
-}
-#lateral h2{
-    background:blue;
-    text-align: center;
-    text-transform: uppercase;
-    color: #e9e9e9;
-}
 #lateral ul , li , a{
-    padding: 5px;
+    padding: 10px;
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -64,12 +40,14 @@
     justify-content: center;
 }
 #lateral a{
+    background: #483D8B;
     border: 1px solid #000;
-    border-radius: 15px;
-    color: black;
+    border-radius: 10px;
+    color: #fff;
+    transition: 2s;
 }
 #lateral a:hover {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
@@ -83,7 +61,7 @@
 }
 .roda-pe h2{
     width: 100%;
-    background: blue;
+    background: #483D8B;
     color: #fff;
     padding: 10px;
 }

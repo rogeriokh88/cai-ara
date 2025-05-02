@@ -45,7 +45,7 @@ ul{
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    transition: 500ms;
+    transition: 2s;
 }
 .list-nav a:hover{
     padding: 1.2rem;
@@ -58,6 +58,7 @@ ul{
     width: 100vw;
     background: url("../imagem/pessoas-segurando-engrenagens-cooperacao-1.jpg") no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .text-logo{
     min-height: calc(100vh - 100px);
@@ -85,6 +86,12 @@ ul{
     align-items: center;
     text-align:justify ;
 }
+.logo-icons{
+    width: 100%;
+    margin: 3em 0 0 95%;
+    gap: 5px;
+}
+
 .btn{
     margin-top: 3em;
     width: 40%;
