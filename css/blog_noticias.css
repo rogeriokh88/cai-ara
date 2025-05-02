@@ -8,6 +8,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    
 }
 
 #primario h2, #lateral h2, #secudario h2{
@@ -54,6 +55,7 @@
 }
 
 .roda-pe{
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
