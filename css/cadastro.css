@@ -1,48 +1,76 @@
 #cadastro-coop{
     width: 100vw;
     min-height: calc(100vh - 100px);
+    margin-top: 100px;
     background: #f7f6f4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-cadastro{
-    width: 40%;
-    border-radius: 15px;
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.formulario-cadastro{
-    width: 60%;
-    min-height: 100%;
-    border-radius: 15px;
-    background: #f7f6f4;
-    display: inline-block;
-    justify-content:center;
-    flex-direction: column;
-}
-fieldset{
-    border: none;
-    padding: 10px;
-    height: 100%;
 }
 legend{
     border-radius: 8px;
     padding: 10px;
     justify-content: baseline;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 2rem;
+    
+}
+.form-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#produto_serviço{
+    margin: 5px;
+}
+.cadastro-log{
+    width: 40%;
+}
+.cadastro-log img{
+    width: 100%;
+}
+.formulario-cadastro{
+    width: 60%;
+    background: #f7f6f4;
+   
 }
 input{
     width: 80%;
+    height: 5%;
     padding: 5px;
     margin: 15px;
     text-transform: uppercase;
 }
-.btn-cadastro2 input{
-    width: 30%;
-    background: #00FF7F;
-    border: none;
+.form-cadstro{
+    padding: 8px;
+}
+/************************************************ media query ******************************/
+@media(max-width:769px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        margin: 10px;
+    }
+    .form-cadstro{
+        padding-bottom: 15px;
+    }
+    input{
+        width: 60%;
+        height: 1%;
+        padding: 2px;
+        margin: 12px;
+        text-transform: uppercase;
+    }
+    legend{
+        display: none;
+    }
+    
 }

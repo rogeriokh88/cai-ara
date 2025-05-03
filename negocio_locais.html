@@ -5,74 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negocio Locais</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body onload="carregaListaCadastros()">
     <header>
-        <div class="logo">
-            <h1>Caiçara <span>Conecta</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li class="list-nav"><a href="index.html">Home</a></li>
-                <li class="list-nav"><a href="negocio_locais.html">Negocio Locais</a></li>
-                <li class="list-nav"><a href="cadastro.html">Cadastro para Empreendedores</a></li>
-                <li class="list-nav"><a href="#">Agenda de Oficinas e Eventos</a></li>
-                <li class="list-nav"><a href="blog_noticias.html">Blog/Noticias</a></li>
+        <nav class="navbar">
+            <a href="" class="logo-menu">Caiçara <span>Conecta</span></a>
+            <ul class="nav-menu" id="menu">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="negocio_locais.html">Empreendedores</a></li>
+                <li class="nav-link"><a href="cadastro.html">Cadastro</a></li>
+                <li class="nav-link"><a href="#">Agenda de Eventos</a></li>
+                <li class="nav-link"><a href="blog_noticias.html">Blog e Noticias</a></li>
             </ul>
+            <i class="fa-solid fa-bars" id="btn-menu"></i>
         </nav>
-        </header>
+    </header>
         <main id="lista-empreendor">
-            <div id="buscar">
+            
+                <div id="buscar">
 
-                <div class="dandos-pesquisar">
-                    <form action="#">
-                    <label for="">Banco</label>
-                    <select>
-                        <option selected disabled value="">--Selecione--</option>
-                        <option id="nome" value="">Nome</option>
-                        <option id="e-mal" >E-mail</option>
-                        <option id="cell" >cell</option>
-                        <option id="rua" value="">rua</option>
-                        <option id="numero" >numero</option>
-                        <option id="bairro" value="">bairro</option>
-                    </select>
-                    </form>
-                </div>
-                <div>
-                    <form action="#">
-                    <label for="produto_serviço"> Serviço / produto</label>
-                        <select name="" id="produto_serviço">
-                            <option selected disabled value="">--Selecione--</option>
-                            <option >produto</option>
-                            <option >serviço</option>
-                        </select>
-                    </form>
-                </div>
-                <div>
-                    <button onclick="pesquisarCadastro()">pesquisar</button>
+                    <div class="dandos-pesquisar">
+                        <form action="#">
+                            <label for="" id="pesquisar-dados"> Buscar </label>
+                            <select id="pesquisar-dados">
+                                <option selected disabled value="">--Selecione--</option>
+                                <option id="nome" value="">Nome</option>
+                                <option id="e-mal" >E-mail</option>
+                                <option id="cell" >cell</option>
+                                <option id="rua" value="">rua</option>
+                                <option id="numero" >numero</option>
+                                <option id="bairro" value="">bairro</option>
+                            </select>
+                         </form>
+                    </div>
+                    <div>
+                        <button onclick="pesquisarCadastro()" id="btn-pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
                 </div>
 
-            </div>
-            <div class="tabela_de_cadastro">
-                <div class="">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th width="300px">Nome</th>
-                                <th width="300px">E-mail</th>
-                                <th>cell</th>
-                                <th>Produto Serviço</th>
-                                <th>endereco</th>
-                                <th width="150px">Numero</th>
-                                <th>bairro</th>
-                            </tr>
-                        </thead>
-                        <tbody id="listCadastro">
+                <div class="tabela_de_cadastro">
+                    <div class="">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="300px">Nome</th>
+                                    <th width="300px">E-mail</th>
+                                    <th>cell</th>
+                                    <th>Produto Serviço</th>
+                                    <th>endereco</th>
+                                    <th width="150px">Numero</th>
+                                    <th>bairro</th>
+                                </tr>
+                            </thead>
+                        
+                            <tbody id="listCadastro">
                            
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
+            
             
 
         </main>

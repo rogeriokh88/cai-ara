@@ -124,3 +124,19 @@ function pesquisarCadastro(){
     let cadastro = new Cadastro(nome, email,cell,produtu_servico,endereco,numero,bairro)
     bd.pesquisar(cadastro)
 }
+
+//@media Query
+let btn_menu = document.getElementById('btn-menu')
+let menu_mobile = document.getElementById('menu')
+
+btn_menu.addEventListener('click', exibirMenu)
+
+function exibirMenu(){
+   menu_mobile.classList.toggle('show')
+
+   if(menu_mobile.classList.contains('show')){
+       btn_menu.setAttribute('class','fa-solid fa-xmark')
+   }else{
+               btn_menu.setAttribute('class','fa-solid fa-bars') 
+}
+}

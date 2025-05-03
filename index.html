@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caiçara Conecta</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Caiçara <span>Conecta</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li class="list-nav"><a href="index.html">Home</a></li>
-                <li class="list-nav"><a href="negocio_locais.html">Negocio Locais</a></li>
-                <li class="list-nav"><a href="cadastro.html">Cadastro para Empreendedores</a></li>
-                <li class="list-nav"><a href="#">Agenda de Oficinas e Eventos</a></li>
-                <li class="list-nav"><a href="blog_noticias.html">Blog/Noticias</a></li>
+        <nav class="navbar">
+            <a href="" class="logo-menu">Caiçara <span>Conecta</span></a>
+            <ul class="nav-menu" id="menu">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="negocio_locais.html">Empreendedores</a></li>
+                <li class="nav-link"><a href="cadastro.html">Cadastro</a></li>
+                <li class="nav-link"><a href="#">Agenda de Eventos</a></li>
+                <li class="nav-link"><a href="blog_noticias.html">Blog e Noticias</a></li>
             </ul>
+            <i class="fa-solid fa-bars" id="btn-menu"></i>
         </nav>
     </header>
     <main class="Home">
-        <div class="text-logo">
+        <div class="fundo-tranpa">
+            <div class="home-texto">
             <h2>"O que é o Caiçara Conecta?"</h2>
             <p>No coração do Vale Verde, onde a natureza exuberava em cores vibrantes, 
                 a energia elétrica sempre foi um desafio. As comunidades isoladas 
@@ -32,22 +34,21 @@
                 sentia essa dificuldade na pele.
                 As bombas de irrigação falhavam, a pequena escola local mal tinha luz para as aulas noturnas e a comunicação 
                 com o mundo exterior era precária.</p>
+            </div>
                
-            <div class="btn">
-                <button class="btn-cadastro"><a href="cadastro.html"><b>Cadastre seu Negocio</b></a></button>
-                <button class="btn-cadastro"><a href="negocio_locais.html"><b>Conheça nosso Empreendedores</b></a></button>
+            <div class="btn-home">
+                <button class="btn-cadastro"><a href="cadastro.html"><b>Cadastre-se</b></a></button>
+                <button class="btn-cadastro"><a href="negocio_locais.html"><b>Empreendedores</b></a></button>
             </div>
-            <div class="logo-icons">
-                <div class="icons-1">
-                    <i><img src="imagem/instagram.png" width="2%" alt=""></i>
-                    <i><img src="imagem/whatsapp.png" width="2%" alt=""></i>
-                    <i><img src="imagem/facebook_733547.png" width="2%" alt=""></i>
-                    <i><img src="imagem/gmail_888853.png" width="2%" alt=""></i>
-                </div>
+            <div class="icons-home">
+                <span><a href="https://www.instagram.com/engenhariacompuninta?igsh=MXUzZG16c3ZmdGVuMg=="><img src="imagem/instagram.png" width="6%" alt=""> Instagram</a></span>
+                <span><a href=""><img src="imagem/whatsapp.png" width="6%" alt=""> Whatsapp</a></span>
+                <span><a href="https://www.facebook.com/share/15WHW2rKCN/"><img src="imagem/facebook_733547.png" width="6%" alt=""> Facebook</a></span>
+                <span><a href=""><img src="imagem/gmail_888853.png" width="6%" alt=""> Gmail</a></span>
             </div>
+        
         </div>
-       
     </main>
-    
+    <script src="js/cadastro.js"></script>
 </body>
 </html>

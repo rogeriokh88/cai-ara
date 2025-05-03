@@ -1,46 +1,47 @@
-
+/****************************************** Importe de dados *************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('cadastro.css');
 @import url('negocio_locais.css');
 @import url('blog_noticias.css');
+
+/************************************reset************************************/
 *{
     font-family: "poppins",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+/**************************barra de menu *******************************************/
 header{
-    width:100vw;
-    height: 100px;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    position:fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    padding: .7rem;
 }
-span{
-    color: #fff;
-}
-.logo{
+.logo-menu {
+    font-size: 2rem;
     color: #FFA07A;
 }
-nav{
+span{
+    font-size: 2rem;
+    color: #fff;
+}
+.navbar{
+   max-width: 1440px;
+   margin: 0 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav-menu{
     display: flex;
-    justify-items: center;
-    align-items: center;
 }
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.list-nav{
-    margin: 10px;
-    padding: 10px;
-}
-.list-nav a{
+
+.nav-link a{
     color: aliceblue;
     text-align: center;
     text-decoration: none;
@@ -48,75 +49,132 @@ ul{
     list-style: none;
     transition: 2s;
 }
-.list-nav a:hover{
-    padding: 1.2rem;
-    background: black;
-    color: aliceblue;
-    cursor: pointer;
-    border-radius: 12px;
+.nav-link a:hover{
+    background: #fff;
+    color: #000;
+    border-radius: 13px;
 }
+i.fa-bars, i.fa-xmark {
+    display: none;
+    cursor: pointer;
+    font-size:2rem;
+    color: #fff;
+ }
+/***************************************Home principal*******************************************************/
 .Home{
-    width: 100vw;
+    width: 100%;
+    padding-top: 90px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: url("../imagem/pessoas-segurando-engrenagens-cooperacao-1.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
+    gap: 2em;
+
 }
-.text-logo{
-    min-height: calc(100vh - 100px);
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: safe;
-    align-items: center;
-    flex-direction: column;
-}
-.text-logo h2{
-    margin-top: 3em;
-    color: #FFA07A;
-    font-weight: 800;
-    font-style: 1.5em;
-    text-transform: uppercase;
-}
-.text-logo p{
-    font-weight: 800;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 1.5em;
-    margin: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align:justify ;
-}
-.logo-icons{
-    width: 100%;
-    margin: 3em 0 0 95%;
-    gap: 5px;
+.fundo-tranpa{
+    background: rgba(0, 0, 0, 0.6);
+    height:100%;
 }
 
-.btn{
-    margin-top: 3em;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-}
-.btn-cadastro{
-    border-radius: 8px;
-    text-transform: uppercase;
-    border: none;
-    opacity: 0.9;
-}
-.btn-cadastro a{
-    text-decoration: none;
-    list-style: none;
-    padding: 10px;
-    color: #000;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    
-}
-.btn-cadastro a:hover {
-    padding: 10px;
+.home-texto h2{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
     color: #fff;
-    background: rgba(0,0,0,0.5);  
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.home-texto p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;   
+    color: #fff;
+}
+.btn-home{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+}
+.btn-cadastro,.btn-cadastro a{
+    background-color: #FFA07A;
+    margin: 0 2rem;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+}
+.icons-home{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+   
+}
+.icons-home a{
+    color: #e9e9e9;
+}
+
+
+/**************************************Media Qury**********************************************************************/
+@media(max-width:769px){
+    .navbar{
+        max-width: 769px;
+    }
+    i.fa-bars, i.fa-xmark{
+        display:block;
+        overflow: hidden;
+    }
+ 
+      .nav-menu{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding:5px;
+        background: #ac7b7b;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+         height: 100vh;
+        transition: all 0.5s;
+    }
+
+    .nav-link{
+        display: block;
+        width: 200px;
+        padding: .5rem 6%;
+    }
+    .show{
+        left: 0;
+        transition: .5s;
+    }
+    .home-texto h2{
+        padding: 5px;
+        font-size: 26px;
+    }
+    .home-texto p{
+        font-size: 1rem;
+    }
+    .btn-home{
+        padding: 10px;
+    }
+    .btn-cadastro,.btn-cadastro a{
+        margin: 0 .5rem;
+        border-radius: 10px;
+    }
+    .icons-home{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .icons-home spam a img{
+        width: 2rem;
+    }
+    .icons-home a{
+        font-size: 10px;
+        color: #e9e9e9;
+    }
+ 
+
 }

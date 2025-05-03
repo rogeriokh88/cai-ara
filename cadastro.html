@@ -5,70 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Empreendedores</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     
     <header>
-        <div class="logo">
-            <h1>Caiçara <span>Conecta</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li class="list-nav"><a href="index.html">Home</a></li>
-                <li class="list-nav"><a href="negocio_locais.html">Negocio Locais</a></li>
-                <li class="list-nav"><a href="cadastro.html">Cadastro para Empreendedores</a></li>
-                <li class="list-nav"><a href="#">Agenda de Oficinas e Eventos</a></li>
-                <li class="list-nav"><a href="blog_noticias.html">Blog/Noticias</a></li>
+        <nav class="navbar">
+            <a href="" class="logo-menu">Caiçara <span>Conecta</span></a>
+            <ul class="nav-menu" id="menu">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="negocio_locais.html">Empreendedores</a></li>
+                <li class="nav-link"><a href="cadastro.html">Cadastro</a></li>
+                <li class="nav-link"><a href="#">Agenda de Eventos</a></li>
+                <li class="nav-link"><a href="blog_noticias.html">Blog e Noticias</a></li>
             </ul>
+            <i class="fa-solid fa-bars" id="btn-menu"></i>
         </nav>
     </header>
+
     <main id="cadastro-coop">
-        <div class="logo-cadastro">
-            <img src="imagem/Imagem do WhatsApp de 2025-05-01 à(s) 19.24.15_4d6dccf6.jpg" width="82%"  alt="">
-        </div>
-        <div class="formulario-cadastro">
-            <form action="#">
-                <fieldset>
-                    <legend><b>Caiçara Conecta</b></legend>
-                    <div class="parte-1">
+        <div class="container">
+
+            <div class="cadastro-log">
+                <img src="imagem/Imagem do WhatsApp de 2025-05-01 à(s) 19.24.15_4d6dccf6.jpg"   alt="">
+            </div>
+
+            <div class="formulario-cadastro">
+             <form action="#">
+               
+                <legend><b>Caiçara Conecta</b></legend>
+
+                <div class="form-1">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" class="nome" placeholder="Diogite seu nome.." required>
-                    </div>
-                    <div>
+                </div>
+                <div class="form-1">
                     <label for="e-mal">E-mail</label>
                     <input type="text" id="e-mal" class="e-mal" placeholder="Diogite seu E-mail.." required>
-                    </div>
-                    <div>
+                </div class="form-1">
+                <div class="form-1">
                     <label for="cell">cell</label>
                     <input type="text" id="cell" class="nome" placeholder="Diogite seu nome.." required>
-                    </div>
-                    <div>
-                        <label for="produto_serviço"> Serviço / produto</label>
-                        <select name="" id="produto_serviço">
-                            <option selected disabled value="">--Selecione--</option>
-                            <option >produto</option>
-                            <option >serviço</option>
-                        </select>
-                    </div>
-                    <div>
-                        <div>
-                        <label for="endereco">Rua</label>
-                        <input type="text" id="endereco" placeholder="digite o nome da rua ">
-                        </div>
-                        <div>
-                        <label for="numero">Numero</label>
-                        <input type="number" id="numero">
-                        </div>
-                        <div>
-                        <label for="bairro">Bairro</label>
-                        <input type="text" id="bairro">
-                        </div>
-                        <div class="btn-cadastro2">
-                           <button type="button" class="btn-2" onclick="cadastroEmpreendedor()">enviar</button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+                </div>
+                <div class="form-1">
+                    <label for="produto_serviço"> Serviço / produto</label>
+                    <select name="" id="produto_serviço">
+                        <option selected disabled value="">--Selecione--</option>
+                        <option>produto</option>
+                        <option>serviço</option>
+                    </select>
+                </div>
+                <div class="form-1">
+                    <label for="endereco">Rua</label>
+                    <input type="text" id="endereco" placeholder="digite o nome da rua ">
+                </div>
+                <div class="form-1">
+                    <label for="numero">Numero</label>
+                    <input type="number" id="numero">
+                </div>
+                <div class="form-1">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro">
+                </div>
+                <div class="form-1">
+                    <button type="button" class="form-cadstro" onclick="cadastroEmpreendedor()"> Enviar</button>
+                </div>
+              </form>
+            </div>
         </div>
     </main>
     <script src="js/cadastro.js"></script>
