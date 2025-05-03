@@ -48,6 +48,7 @@ class Bd {
             if(cadastro === null){
                 continue
             }
+            cadastro.id = i
             cadastros.push(cadastro)
         }
         return cadastros
@@ -59,6 +60,9 @@ class Bd {
         console.log(cadastro)
         cadastroFiltradas.filter(c => c.nome == cadastro.nome)
 
+    }
+    remover(id){
+        localStorage.removeItem(id)
     }
 }
 let bd = new Bd()
@@ -110,6 +114,17 @@ function carregaListaCadastros(){
     linha.insertCell(4).innerHTML = g.endereco
     linha.insertCell(5).innerHTML = g.numero
     linha.insertCell(6).innerHTML = g.bairro
+    //criar um botao de delete
+    let btn = document.createElement("button")
+    btn.className = "btn-delete"
+    btn.innerHTML = "<i class='fas fa-times'>"
+    btn.id = `id_cadastro_${g.id}`
+    btn.onclick = function(){
+        let id = this.id.replace("id_cadastro_" , "")
+        bd.remover(id)
+        window.location.reload()
+    }
+    linha.insertCell(7).append(btn)
    })
 }
 function pesquisarCadastro(){

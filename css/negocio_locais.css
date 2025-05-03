@@ -54,6 +54,13 @@ td{
     border-collapse: collapse
 
 }
+.btn-delete{
+    color: black;
+    background: red;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+}
 /***************** media Query *****************************************/
 @media(max-width:769px){
    
