@@ -155,3 +155,4 @@ function exibirMenu(){
                btn_menu.setAttribute('class','fa-solid fa-bars') 
 }
 }
+
