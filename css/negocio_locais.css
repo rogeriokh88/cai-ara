@@ -72,6 +72,13 @@ td{
     font-size: 10px;
     }
     td{
-        font-size: 10px;
+        font-size: 5px;
+    }
+    #input-busca{
+        width: 200px;
+        border: 1px solid black;
+    }
+    .ico-pesquisa{
+        display: none;
     }
 }
