@@ -152,7 +152,7 @@ function exibirMenu(){
    if(menu_mobile.classList.contains('show')){
        btn_menu.setAttribute('class','fa-solid fa-xmark')
    }else{
-               btn_menu.setAttribute('class','fa-solid fa-bars') 
+        btn_menu.setAttribute('class','fa-solid fa-bars') 
 }
 }
 
