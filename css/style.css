@@ -182,5 +182,14 @@ i.fa-bars, i.fa-xmark {
         font-size: 32px;
         color: #fff;
     }
+    @media (max-width: 480px) { 
+        .logo-menu{
+            font-size: 25px;
+        }
+        span{
+            font-size: 30px;
+            color: #fff;
+        }
+    }
 }
 
