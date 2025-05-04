@@ -25,6 +25,9 @@ header {
     position: fixed;
     z-index: 1;
 }
+.btn-menu{
+    color: aliceblue;
+}
 
 .group-input {
     width: 100%;
@@ -112,6 +115,7 @@ header {
 
 @media (max-width: 480px) { 
     .input {
+        width: 190px;
         padding: 10px 15px;
     }
     
