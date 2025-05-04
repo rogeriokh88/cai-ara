@@ -3,7 +3,7 @@
 @import url('cadastro.css');
 @import url('negocio_locais.css');
 @import url('blog_noticias.css');
-
+@import url("produtos.css");
 /************************************reset************************************/
 *{
     font-family: "poppins",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
