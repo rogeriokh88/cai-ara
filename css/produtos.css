@@ -21,13 +21,11 @@ body {
 
 .btn-menu{
     color: aliceblue;
-    z-index: -2;
+    z-index: 1;
 }
 .group-input {
     width: 100%;
     min-width: 500px;
-    position: relative;
-    z-index: -1;
 }
 
 .input {
