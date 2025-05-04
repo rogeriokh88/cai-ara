@@ -12,27 +12,22 @@ body {
     line-height: 1.6;
  }
  .contaener{
+    width: 100%;
     padding: 100px;
  }
 
 /* Estilos do cabeçalho */
-header {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;background-color: #4CAF50;
-    padding: .7rem 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
+
+
 .btn-menu{
     color: aliceblue;
+    z-index: -2;
 }
-
 .group-input {
     width: 100%;
     min-width: 500px;
     position: relative;
+    z-index: -1;
 }
 
 .input {
@@ -54,7 +49,6 @@ header {
 .input::placeholder {
     color: #aaa;
 }
-
 /* Container de produtos */
 .produtos-container {
     display: grid;
@@ -110,7 +104,10 @@ header {
 @media (max-width: 768px) {
     .produtos-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        
     }
+   
+    
 }
 
 @media (max-width: 480px) { 

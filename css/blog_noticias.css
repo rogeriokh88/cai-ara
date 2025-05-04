@@ -85,6 +85,9 @@
         grid-template-columns: 45% 45%;
         
     } 
+    #blog_noticias{
+        margin-top: 0;
+    }
     #lateral{
         display: none;
     }

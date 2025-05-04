@@ -37,6 +37,9 @@
     width: 100%;
     background: #EEE8AA;
 }
+#lista-empreendor{
+    margin-top: 0;
+}
 table{
     width: 100%;
 }
